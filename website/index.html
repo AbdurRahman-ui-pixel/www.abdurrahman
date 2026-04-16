@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobayer Hossan | Premium Video Editor & Motion Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Enables toggleable dark mode
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981', 
+                        dark: '#0f172a',
+                        card: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 dark:bg-dark text-slate-800 dark:text-gray-200 font-sans antialiased overflow-x-hidden transition-colors duration-300">
+
+    <nav class="fixed w-full z-50 bg-white/70 dark:bg-dark/80 backdrop-blur-lg border-b border-gray-200/50 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-900 dark:text-white tracking-wider transition-colors">Jobayer<span class="text-primary">.</span></a>
+            
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-semibold items-center">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#showreel" class="hover:text-primary transition">Showreel</a>
+                <a href="#work" class="hover:text-primary transition">Stack</a>
+                <a href="#expertise" class="hover:text-primary transition">Expertise</a>
+                <a href="#reviews" class="hover:text-primary transition">Feedback</a>
+                <a href="#pricing" class="hover:text-primary transition">Pricing</a>
+                <a href="#faq" class="hover:text-primary transition">FAQ</a>
+                
+                <button id="theme-toggle" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-200/50 dark:bg-gray-800/50 border border-gray-300/50 dark:border-gray-700/50 text-gray-700 dark:text-yellow-400 hover:scale-110 transition-all shadow-sm">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+
+                <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-emerald-600 transition shadow-lg shadow-primary/30">Hire Me</a>
+            </div>
+
+            <div class="md:hidden flex items-center space-x-4">
+                <button id="mobile-theme-toggle" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-200/50 dark:bg-gray-800/50 text-gray-700 dark:text-yellow-400">
+                    <i id="mobile-theme-icon" class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="text-gray-800 dark:text-gray-200 text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 dark:bg-card/95 backdrop-blur-xl border-t border-gray-200 dark:border-gray-800 absolute w-full">
+            <div class="flex flex-col px-6 py-4 space-y-4 text-sm font-semibold">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#showreel" class="mobile-link">Showreel</a>
+                <a href="#work" class="mobile-link">Stack</a>
+                <a href="#expertise" class="mobile-link">Expertise</a>
+                <a href="#reviews" class="mobile-link">Feedback</a>
+                <a href="#pricing" class="mobile-link">Pricing</a>
+                <a href="#faq" class="mobile-link">FAQ</a>
+                <a href="#contact" class="text-primary mobile-link">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6 container mx-auto flex flex-col-reverse md:flex-row items-center min-h-screen">
+        <div class="w-full md:w-1/2 mt-12 md:mt-0">
+            <span class="text-primary font-semibold tracking-widest uppercase text-sm border border-primary/30 px-3 py-1 rounded-full bg-primary/10">Available for Freelance</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white leading-tight mt-6 mb-6 transition-colors">
+                I Create <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-300">Cinematic</span> Visual Stories.
+            </h1>
+            <p class="text-gray-600 dark:text-gray-400 text-lg mb-8 max-w-lg transition-colors">
+                Expert Video Editor & Motion Designer. Let's make your footage legendary.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-full font-bold text-center hover:bg-emerald-600 transition shadow-lg shadow-primary/30">Hire Me Now</a>
+                <a href="#" class="border border-gray-400 dark:border-gray-600 text-gray-800 dark:text-white px-8 py-3 rounded-full font-bold text-center hover:bg-gray-100 dark:hover:bg-gray-800 transition"><i class="fas fa-download mr-2"></i> Download CV</a>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center relative">
+            <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-card shadow-2xl z-10 transition-colors duration-300">
+                <img src="https://picsum.photos/400/400?random=1" alt="Jobayer Hossan" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute top-10 left-10 bg-white/80 dark:bg-card/80 backdrop-blur-md p-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 animate-float"><i class="fas fa-video text-blue-500 text-2xl"></i></div>
+            <div class="absolute bottom-10 right-10 bg-white/80 dark:bg-card/80 backdrop-blur-md p-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 animate-float-delayed"><i class="fas fa-film text-purple-500 text-2xl"></i></div>
+        </div>
+    </section>
+
+    <section class="bg-white/50 dark:bg-card/50 backdrop-blur-lg py-12 border-y border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">10M+</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-wider">Views Generated</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">500+</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-wider">Videos Edited</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">98%</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-wider">Client Retention</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">5+</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-wider">Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-slate-100 dark:bg-dark py-6 overflow-hidden border-b border-gray-200 dark:border-gray-800 relative flex items-center transition-colors duration-300">
+        <div class="marquee-track flex whitespace-nowrap text-3xl font-bold text-gray-400 dark:text-gray-700 uppercase">
+            <span class="mx-8">Shopelor</span> • <span class="mx-8">Sunnahloy</span> • <span class="mx-8">Khoroch.app</span> • <span class="mx-8">Salman Munna</span> • <span class="mx-8">Mianovo</span> •
+            <span class="mx-8">Shopelor</span> • <span class="mx-8">Sunnahloy</span> • <span class="mx-8">Khoroch.app</span> • <span class="mx-8">Salman Munna</span> • <span class="mx-8">Mianovo</span> •
+            <span class="mx-8">Shopelor</span> • <span class="mx-8">Sunnahloy</span> • <span class="mx-8">Khoroch.app</span> • <span class="mx-8">Salman Munna</span> • <span class="mx-8">Mianovo</span>
+        </div>
+    </div>
+
+    <section id="showreel" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-12">
+            <span class="text-primary font-semibold tracking-widest uppercase text-sm">My Introduction</span>
+            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mt-2 transition-colors">2026 Showreel</h2>
+        </div>
+        <div class="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-gray-200 dark:border-gray-800 bg-white dark:bg-card aspect-video flex items-center justify-center group cursor-pointer transition-colors duration-300">
+            <img src="https://picsum.photos/1200/700?random=2" alt="Showreel Cover" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition duration-500">
+            <div class="w-20 h-20 bg-primary/90 backdrop-blur-sm rounded-full flex items-center justify-center z-10 group-hover:scale-110 transition duration-300 shadow-lg shadow-primary/50 text-white text-2xl pl-2">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-24 bg-white/40 dark:bg-card border-y border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-widest uppercase text-sm">Mastery</span>
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mt-2">Software Stack</h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-900 dark:text-white font-semibold flex items-center"><i class="fas fa-bolt text-blue-500 mr-2"></i> After Effects</span>
+                        <span class="text-gray-500 dark:text-gray-400">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 dark:bg-dark rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-900 dark:text-white font-semibold flex items-center"><i class="fas fa-video text-purple-500 mr-2"></i> Premiere Pro</span>
+                        <span class="text-gray-500 dark:text-gray-400">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 dark:bg-dark rounded-full h-2.5">
+                        <div class="bg-purple-500 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-900 dark:text-white font-semibold flex items-center"><i class="fas fa-magic text-red-500 mr-2"></i> Adobe Animate</span>
+                        <span class="text-gray-500 dark:text-gray-400">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 dark:bg-dark rounded-full h-2.5">
+                        <div class="bg-red-500 h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-900 dark:text-white font-semibold flex items-center"><i class="fas fa-pen-nib text-orange-500 mr-2"></i> Illustrator</span>
+                        <span class="text-gray-500 dark:text-gray-400">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 dark:bg-dark rounded-full h-2.5">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-900 dark:text-white font-semibold flex items-center"><i class="fas fa-image text-cyan-500 mr-2"></i> Photoshop</span>
+                        <span class="text-gray-500 dark:text-gray-400">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 dark:bg-dark rounded-full h-2.5">
+                        <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-12">
+            <span class="text-primary font-semibold tracking-widest uppercase text-sm">Watch My Work</span>
+            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mt-2 transition-colors">Core Expertise</h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-12" id="portfolio-filters">
+            <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full font-semibold transition shadow-md shadow-primary/20" data-filter="all">All</button>
+            <button class="filter-btn bg-white/70 dark:bg-card/70 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold transition border border-gray-200 dark:border-gray-700 shadow-sm backdrop-blur-sm" data-filter="short">Short-form</button>
+            <button class="filter-btn bg-white/70 dark:bg-card/70 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold transition border border-gray-200 dark:border-gray-700 shadow-sm backdrop-blur-sm" data-filter="motion">Motion Graphics</button>
+            <button class="filter-btn bg-white/70 dark:bg-card/70 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold transition border border-gray-200 dark:border-gray-700 shadow-sm backdrop-blur-sm" data-filter="doc">Documentary</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-white/60 dark:bg-card/60 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-lg aspect-video cursor-pointer" data-category="short">
+                <img src="https://picsum.photos/600/400?random=3" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-30">
+                <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-play-circle text-4xl text-primary mb-2 shadow-sm"></i>
+                    <h3 class="text-gray-900 dark:text-white font-bold text-lg drop-shadow-md">Reel Edit 01</h3>
+                </div>
+            </div>
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-white/60 dark:bg-card/60 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-lg aspect-video cursor-pointer" data-category="motion">
+                <img src="https://picsum.photos/600/400?random=4" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-30">
+                <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-play-circle text-4xl text-primary mb-2 shadow-sm"></i>
+                    <h3 class="text-gray-900 dark:text-white font-bold text-lg drop-shadow-md">UI Animation</h3>
+                </div>
+            </div>
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-white/60 dark:bg-card/60 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-lg aspect-video cursor-pointer" data-category="doc">
+                <img src="https://picsum.photos/600/400?random=5" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-30">
+                <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-play-circle text-4xl text-primary mb-2 shadow-sm"></i>
+                    <h3 class="text-gray-900 dark:text-white font-bold text-lg drop-shadow-md">Travel Doc</h3>
+                </div>
+            </div>
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-white/60 dark:bg-card/60 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-lg aspect-video cursor-pointer" data-category="short">
+                <img src="https://picsum.photos/600/400?random=6" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-30">
+                <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-play-circle text-4xl text-primary mb-2 shadow-sm"></i>
+                    <h3 class="text-gray-900 dark:text-white font-bold text-lg drop-shadow-md">TikTok Viral Edit</h3>
+                </div>
+            </div>
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-white/60 dark:bg-card/60 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-lg aspect-video cursor-pointer" data-category="motion">
+                <img src="https://picsum.photos/600/400?random=7" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-30">
+                <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-play-circle text-4xl text-primary mb-2 shadow-sm"></i>
+                    <h3 class="text-gray-900 dark:text-white font-bold text-lg drop-shadow-md">Logo Reveal</h3>
+                </div>
+            </div>
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-white/60 dark:bg-card/60 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-lg aspect-video cursor-pointer" data-category="doc">
+                <img src="https://picsum.photos/600/400?random=8" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-30">
+                <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-play-circle text-4xl text-primary mb-2 shadow-sm"></i>
+                    <h3 class="text-gray-900 dark:text-white font-bold text-lg drop-shadow-md">Brand Story</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-white/40 dark:bg-card border-y border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-widest uppercase text-sm">Client Trust</span>
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mt-2">What They Say</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/80 dark:bg-dark p-8 rounded-2xl border border-gray-200 dark:border-gray-700 relative backdrop-blur-sm shadow-md">
+                    <i class="fas fa-quote-right absolute top-6 right-6 text-gray-300 dark:text-gray-700 text-4xl opacity-50"></i>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 relative z-10">"Jobayer completely transformed our YouTube channel. His editing style is engaging, fast-paced, and cinematic. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/100/100?random=9" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="text-gray-900 dark:text-white font-bold">Salman Munna</h4>
+                            <p class="text-primary text-sm">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/80 dark:bg-dark p-8 rounded-2xl border border-gray-200 dark:border-gray-700 relative backdrop-blur-sm shadow-md">
+                    <i class="fas fa-quote-right absolute top-6 right-6 text-gray-300 dark:text-gray-700 text-4xl opacity-50"></i>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 relative z-10">"The UI animation he did for our app promo was stunning. He understands motion graphics deeply and delivers on time."</p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/100/100?random=10" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="text-gray-900 dark:text-white font-bold">Khoroch.app</h4>
+                            <p class="text-primary text-sm">Software</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/80 dark:bg-dark p-8 rounded-2xl border border-gray-200 dark:border-gray-700 relative backdrop-blur-sm shadow-md">
+                    <i class="fas fa-quote-right absolute top-6 right-6 text-gray-300 dark:text-gray-700 text-4xl opacity-50"></i>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 relative z-10">"Perfect pacing and beautiful color grading. Our documentary series looks like it belongs on Netflix thanks to his skills."</p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/100/100?random=11" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="text-gray-900 dark:text-white font-bold">Sunnahloy</h4>
+                            <p class="text-primary text-sm">Fashion Brand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 container mx-auto px-6 max-w-4xl">
+        <div class="text-center mb-16">
+            <span class="text-primary font-semibold tracking-widest uppercase text-sm">Got Questions?</span>
+            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mt-2 transition-colors">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="faq-item bg-white/70 dark:bg-card/70 backdrop-blur-lg border border-gray-200/50 dark:border-gray-700/50 rounded-xl shadow-lg transition-all">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center text-gray-900 dark:text-white font-semibold hover:text-primary focus:outline-none">
+                    Do you provide source files (Premiere Pro/After Effects)?
+                    <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-600 dark:text-gray-400">
+                    Yes, source files are included in the Premium Package. For Basic or Advance packages, source files can be provided for an additional fee.
+                </div>
+            </div>
+            <div class="faq-item bg-white/70 dark:bg-card/70 backdrop-blur-lg border border-gray-200/50 dark:border-gray-700/50 rounded-xl shadow-lg transition-all">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center text-gray-900 dark:text-white font-semibold hover:text-primary focus:outline-none">
+                    How do we transfer large raw footage files?
+                    <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-600 dark:text-gray-400">
+                    I prefer using Google Drive, Dropbox, or WeTransfer. Once we start a project, I will share a dedicated secure folder with you to upload your raw footage.
+                </div>
+            </div>
+            <div class="faq-item bg-white/70 dark:bg-card/70 backdrop-blur-lg border border-gray-200/50 dark:border-gray-700/50 rounded-xl shadow-lg transition-all">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center text-gray-900 dark:text-white font-semibold hover:text-primary focus:outline-none">
+                    What payment methods do you accept?
+                    <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-600 dark:text-gray-400">
+                    I accept Payoneer, Wise, Direct Bank Transfer, and crypto payments for international clients. For local clients, Mobile Banking (bKash/Nagad) is accepted.
+                </div>
+            </div>
+            <div class="faq-item bg-white/70 dark:bg-card/70 backdrop-blur-lg border border-gray-200/50 dark:border-gray-700/50 rounded-xl shadow-lg transition-all">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center text-gray-900 dark:text-white font-semibold hover:text-primary focus:outline-none">
+                    What is the usual turnaround time?
+                    <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-4 text-gray-600 dark:text-gray-400">
+                    Short-form Reels usually take 24-48 hours. Standard 10-minute YouTube videos take 2-4 days. Larger documentaries or heavy VFX projects depend on the complexity.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white/40 dark:bg-card border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-widest uppercase text-sm">Get In Touch</span>
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mt-2">Let's Talk Project</h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+                <div class="w-full lg:w-2/3 bg-white/80 dark:bg-dark p-8 rounded-2xl border border-gray-200 dark:border-gray-700 backdrop-blur-sm shadow-xl">
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Your Name" class="w-full bg-slate-50 dark:bg-card border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition">
+                            <input type="email" placeholder="Your Email" class="w-full bg-slate-50 dark:bg-card border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full bg-slate-50 dark:bg-card border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 mb-6 focus:outline-none focus:border-primary transition">
+                        <textarea placeholder="Your Message" rows="5" class="w-full bg-slate-50 dark:bg-card border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 mb-6 focus:outline-none focus:border-primary transition"></textarea>
+                        <button type="button" class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-emerald-600 transition shadow-lg shadow-primary/20">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="w-full lg:w-1/3 flex flex-col justify-center space-y-8">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white dark:bg-card border border-gray-200 dark:border-gray-700 rounded-full flex items-center justify-center text-primary text-xl mr-4 flex-shrink-0 shadow-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-1 uppercase tracking-wider">My Name</h4>
+                            <p class="text-gray-900 dark:text-white font-bold text-lg">Jobayer Hossan</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white dark:bg-card border border-gray-200 dark:border-gray-700 rounded-full flex items-center justify-center text-primary text-xl mr-4 flex-shrink-0 shadow-sm">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-1 uppercase tracking-wider">WhatsApp / Phone</h4>
+                            <p class="text-gray-900 dark:text-white font-bold text-lg">+880 1839 582261</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white dark:bg-card border border-gray-200 dark:border-gray-700 rounded-full flex items-center justify-center text-primary text-xl mr-4 flex-shrink-0 shadow-sm">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-1 uppercase tracking-wider">Email Address</h4>
+                            <p class="text-gray-900 dark:text-white font-bold text-lg break-all">hello.jobayerhossan@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/8801839582261" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-lg shadow-[#25D366]/40 hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-white/80 dark:bg-dark/90 backdrop-blur-md py-8 border-t border-gray-200 dark:border-gray-800 text-center transition-colors duration-300">
+        <p class="text-gray-600 dark:text-gray-400">© 2026 askjobayer.com | All Rights Reserved</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-gray-500 hover:text-primary transition text-xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-500 hover:text-primary transition text-xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-500 hover:text-primary transition text-xl"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-gray-500 hover:text-primary transition text-xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
